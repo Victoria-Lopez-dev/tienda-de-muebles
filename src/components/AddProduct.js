@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Navegator from "./Navegator";
+import productsDB from "../productsDB";
+
 class AddProduct extends React.Component {
   nameRef = React.createRef();
   priceRef = React.createRef();
@@ -12,11 +14,27 @@ class AddProduct extends React.Component {
   state = {
     products: {}    
   };
+  componentDidMount() {
+    // Hacer que los productos vengan de la DB a aca y que carge la info en products
+      this.setState({ products : productsDB})
+   }
+
   createProd = event => {
     // 1.  stop the form from submitting
     event.preventDefault();
 
-    console.log("pendiente")
+ const products = { ...this.state.products };
+    const product = {
+      name:this.nameRef.current.value,
+      category:this.categoryRef.current.value,
+      desc:this.descRef.current.value,
+      price:this.priceRef.current.value,
+      image :"/images/estilo-madera.png"
+    };
+    products["bla"] = product;
+  
+    this.setState({ products });
+    event.currentTarget.reset();
   };
 
   render() {

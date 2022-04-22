@@ -1,8 +1,11 @@
 import React from "react";
 import CardProduct from "./CardProduct";
-
+import PropTypes from "prop-types";
 class ProductsArea extends React.Component {
-  
+  static propTypes = {
+    products: PropTypes.object,
+    addToOrder:PropTypes.func
+  }
   render() {
     return (
       <main id="prod">

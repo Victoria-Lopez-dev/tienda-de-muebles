@@ -1,8 +1,10 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 class Navegator extends React.Component {
 
-
+  static propTypes = {
+    order:PropTypes.number
+  }
   render() {
    
     return (

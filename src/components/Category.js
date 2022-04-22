@@ -1,7 +1,12 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 
 class Category extends React.Component {
+
+  static propTypes = {
+    data:PropTypes.object
+  }
+
   render() {
     const{name,desc}= this.props.data;
     const nameId = name + "1"

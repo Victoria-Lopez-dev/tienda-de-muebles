@@ -1,0 +1,266 @@
+
+
+/* ----------     navegador      ------------*/
+nav{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#logo{
+    margin-left: 20px ;
+}
+#logo> img{
+  width: 70px;
+}
+.menu{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding-right: 20px;
+}
+.item-menu{
+list-style-type: none;
+}
+.item-link{
+text-decoration: none;
+color:#231D8A ;
+font-weight: 300;
+font-size: 20px;
+}
+
+/* ----------     hoja index      ------------*/
+
+
+header{
+background-color: #ADD9E6;
+color: white;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0px 100px;
+height: 500px;
+}
+
+.ProdArea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  gap: 100px;
+ 
+}
+#prod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 80px;
+}
+.titulo-blanco{
+text-align: center;
+font-size: 4em;
+}
+
+.cont-padre{
+padding: 80px 100px;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+
+.card{
+width: 500px;
+height: 300px;
+border: 2px solid #A0D3A5;
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.desc-card{
+width: 90%;
+text-align: center;
+height: 30px;
+}
+
+.img-card{
+width: 100%;
+
+}
+
+.boton-ver{
+padding: 10px;
+background-color: #A0D3A5;
+color: #231D8A;
+text-align: center;
+text-decoration: none;
+width: 40%;
+margin-bottom: 20px;
+}
+
+
+
+/* ----------     footer      ------------*/
+
+footer{
+background-color: #ADD9E6;
+height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 40px;
+color: white;
+}
+
+.footer-left{
+display: flex;
+justify-content: space-between;
+width:300px;
+height: 60px;
+
+}
+
+.titulo-foot{
+font-size: 21px;
+}
+
+
+/* ----------     hoja productos      ------------*/
+
+
+.card-prod{
+width: 500px;
+height: 480px;
+}
+.titulo-prod{
+font-size: 20px;
+}
+
+.img-prod{
+height: 221px;
+}
+
+
+
+/* ----------     hoja form      ------------*/
+
+.titulo-form{
+margin-left: 40px;
+color:#2d91b0;
+}
+
+form{
+margin: 100px;
+}
+.item-form{
+margin: 20px 0px;
+}
+
+input{
+
+height: 30px;
+width: 80%;
+}
+label{
+font-size: 20px;
+font-weight: 200;
+color: #231D8A;
+}
+.boton-agregar{
+background-color:#188cb0 ;
+color: white;
+border: #2d91b0;
+padding: 10px;
+}
+
+.boton-agregar:active{
+background-color:#005671
+}
+
+/*------categoria --------*/
+.titulo-cat{
+  font-size: 2em;
+}
+
+.category,.front, .back,.image-cat {
+  border-radius: 50%;
+  width: 15vw;
+  height: 13vw;
+}
+.cat-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 80px 0px;
+}
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px;
+ 
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+  transform: rotateY(0deg);
+  position: relative;
+  
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background-color:#A0D3A5;
+}
+ #sillas{
+background-image: url(../public/images/silla.jpg);
+background-size: cover;
+
+ }
+ #mesas{
+  background-image: url(../public/images/mesa.jpg);
+  background-size: cover;
+}
+#cajoneras{
+  background-image: url(../public/images/mueble.jpg);
+  background-size: cover;
+  
+}
+.image-cat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}

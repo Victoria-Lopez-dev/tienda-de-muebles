@@ -40,7 +40,8 @@
             image:"/images/estilo-madera.png",
             desc:"Ideal para ambientes con grandes colores, dandole un toque hogareño  tus ambientes",
             price:53200
-        }
+        },
+
     };
 
     export default productsDB;

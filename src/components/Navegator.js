@@ -11,7 +11,7 @@ class Navegator extends React.Component {
           <ul className="menu">
               <li className="item-menu"><a className="item-link" href="#prod">Productos</a></li>
               <li className="item-menu"><a className="item-link" href="/addProduct">Agregar Producto</a></li>
-              <li className="item-menu" >Chango<span>{this.props.order}</span></li>
+              <li className="item-menu" id="item-compra"><img src="images/chango.png" alt="carrito de compras"/><span className="circle">{this.props.order}</span></li>
           </ul>
       </nav>
     )

@@ -28,7 +28,7 @@ list-style-type: none;
 }
 .item-link{
 text-decoration: none;
-color:#231D8A ;
+color:#2D3040;
 font-weight: 300;
 font-size: 20px;
 }
@@ -37,13 +37,15 @@ font-size: 20px;
 
 
 header{
-background-color: #ADD9E6;
-color: white;
+background: url(../public/images/foto-living.jpg) 20% 80% ;
+background-size:cover;
+color: #2D3040;
+text-shadow: white 10px 10px 5px;
 display: flex;
-justify-content: space-around;
+justify-content: flex-start;
 align-items: center;
-padding: 0px 100px;
-height: 500px;
+padding: 0px 20%;
+min-height: 700px;
 }
 
 .ProdArea{
@@ -99,14 +101,27 @@ width: 100%;
 .boton-ver{
 padding: 10px;
 background-color: #A0D3A5;
-color: #231D8A;
+color: #2D3040;
 text-align: center;
 text-decoration: none;
 width: 40%;
 margin-bottom: 20px;
+font-size: 18px;
 }
 
-
+#item-compra{
+  position: relative;
+}
+.circle{
+  background-color: #60A3BC;
+  color: #2D3040;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: 64%;
+  bottom: 11%;
+}
 
 /* ----------     footer      ------------*/
 
@@ -154,35 +169,42 @@ height: 221px;
 
 .titulo-form{
 margin-left: 40px;
-color:#2d91b0;
+color: #2D3040;
+font-size: 3em;
 }
 
 form{
 margin: 100px;
 }
 .item-form{
-margin: 20px 0px;
+ display: flex;
+ justify-content: space-between;
+ padding-bottom: 30px;
+ width: 70%;
 }
 
 input{
 
 height: 30px;
-width: 80%;
+width: 50%;
 }
 label{
 font-size: 20px;
 font-weight: 200;
-color: #231D8A;
+color: #2D3040;;
 }
 .boton-agregar{
-background-color:#188cb0 ;
-color: white;
-border: #2d91b0;
-padding: 10px;
+  box-shadow: #787676 2px 2px;
+  background-color:#2D3040;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px;
+
 }
 
 .boton-agregar:active{
-background-color:#005671
+background-color:#20222d;
+
 }
 
 /*------categoria --------*/
@@ -196,6 +218,7 @@ background-color:#005671
   height: 13vw;
 }
 .cat-section{
+  background-color: #ADD9E6;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
